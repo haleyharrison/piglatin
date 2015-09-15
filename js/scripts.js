@@ -14,6 +14,7 @@ var pigLatinTranslator = function(word) {
     }
 };
 
+
 var startsWithAVowel = function(word) {
   var vowels = ["a", "e", "i", "o", "u"];
   var firstLetter = word.slice(0, 1);
@@ -25,6 +26,8 @@ var startsWithTwoConsonants = function(word) {
   var twoCons = word.slice(0,2);
   return consonants.indexOf(twoCons) !== -1;
 };
+
+//
 
 $(document).ready(function() {
   $("form#translator").submit(function(event) {
